@@ -1,0 +1,108 @@
+-
+  name: New Year's Day
+  regions: [ca]
+  rule: FREQ=YEARLY;BYMONTH=1;BYMONTHDAY=1
+-
+  regions: [ca_qc]
+  name: New Years
+  rule: FREQ=YEARLY;BYMONTH=1;BYMONTHDAY=2
+-
+  regions: [ ca_ab, ca_on, ca_sk ]
+  name: Family Day
+  rule: FREQ=YEARLY;BYMONTH=2;BYDAY=3MO
+-
+  regions: [ca_mb]
+  name: Louis Riel Day
+  rule: FREQ=YEARLY;BYMONTH=2;BYDAY=3MO
+-
+  regions: [ca_bc]
+  name: BC Family Day
+  rule: FREQ=YEARLY;BYMONTH=2;BYDAY=2MO
+-
+  regions: [ca_nf]
+  name: St. Patrick's Day
+  rule: FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=17
+-
+  regions: [ca_nf]
+  name: St. George's Day
+  rule: FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=23
+-
+  regions: [ca]
+  name: Victoria Day
+  rule: FREQ=YEARLY;BYMONTH=5;BYDAY=MO;BYMONTHDAY=18,19,20,21,22,23,24
+-
+  regions: [ca_qc]
+  name: National Patriotes Day
+  rule: FREQ=YEARLY;BYMONTH=5;BYDAY=MO;BYMONTHDAY=18,19,20,21,22,23,24
+-
+  regions: [ca_nt]
+  name: National Aboriginal Day
+  rule: FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=21
+-
+  regions: [ca_nf]
+  name: Discovery Day
+  rule: FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=24
+-
+  regions: [ca_qc]
+  name: Fête Nationale
+  rule: FREQ=YEARLY;BYMONTH=6;BYMONTHDAY=24
+-
+  regions: [ca]
+  name: Canada Day
+  rule: FREQ=YEARLY;BYMONTH=7;BYDAY=MO,TU,WE,TH,FR,SA;BYMONTHDAY=1
+-
+  regions: [ca]
+  name: Canada Day
+  rule: FREQ=YEARLY;BYMONTH=7;BYDAY=SU;BYMONTHDAY=2
+-
+  regions: [ca_nf]
+  name: Orangemen's Day
+  rule: FREQ=YEARLY;BYMONTH=7;BYMONTHDAY=12
+-
+  regions: [ca_nu]
+  name: Nunavut Day
+  rule: FREQ=YEARLY;BYMONTH=7;BYMONTHDAY=9
+-
+  regions: [ca_bc]
+  name: BC Day
+  rule: FREQ=YEARLY;BYMONTH=8;BYDAY=1MO
+-
+  regions: [ca_sk]
+  name: Saskatchewan Day
+  rule: FREQ=YEARLY;BYMONTH=8;BYDAY=1MO
+-
+  regions: [ca_ab]
+  name: Heritage Day
+  rule: FREQ=YEARLY;BYMONTH=8;BYDAY=1MO
+-
+  regions: [ca_ns]
+  name: Natal Day
+  rule: FREQ=YEARLY;BYMONTH=8;BYDAY=1MO
+-
+  regions: [ca_on]
+  name: Civic Holiday
+  rule: FREQ=YEARLY;BYMONTH=8;BYDAY=1MO
+-
+  regions: [ca_yk]
+  name: Discovery Day
+  rule: FREQ=YEARLY;BYMONTH=8;BYDAY=3MO
+-
+  regions: [ca]
+  name: Labour Day
+  rule: FREQ=YEARLY;BYMONTH=9;BYDAY=1MO
+-
+  regions: [ca]
+  name: Thanksgiving
+  rule: FREQ=YEARLY;BYMONTH=10;BYDAY=2MO
+-
+  regions: [ca]
+  name: Remembrance Day
+  rule: FREQ=YEARLY;BYMONTH=11;BYMONTHDAY=11
+-
+  regions: [ca]
+  name: Christmas Day
+  rule: FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=25
+-
+  regions: [ca]
+  name: Boxing Day
+  rule: FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=26
