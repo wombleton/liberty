@@ -1,0 +1,24 @@
+{
+  "name": "node-holidays",
+  "version": "0.0.1",
+  "description": "Calculate statutory and other holidays.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/nodeunit/bin/nodeunit test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wombleton/node-holidays"
+  },
+  "keywords": [
+    "holidays",
+    "statutory",
+    "date",
+    "calculator"
+  ],
+  "author": "Rowan Crawford (wombleton@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wombleton/node-holidays/issues"
+  }
+}
