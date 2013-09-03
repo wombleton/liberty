@@ -20,5 +20,13 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/wombleton/node-holidays/issues"
+  },
+  "devDependencies": {
+    "nodeunit": "~0.8.1"
+  },
+  "dependencies": {
+    "moment": "~2.1.0",
+    "underscore": "~1.5.1",
+    "rrule": "~2.0.0"
   }
 }
