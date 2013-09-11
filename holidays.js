@@ -4,18 +4,26 @@ var _ = require('underscore'),
     rules = require('./rules');
 
 module.exports = {
-    on: function(d) {
-        var holidays,
-            icals = rules[this.locale] || [];
+    rules: function() {
+        var cals = _.map(this.locales, function(locale) {
+            return rules[locale] || [];
+        });
 
-        d = moment(d).startOf('day');
+        return _.flatten(cals);
+    },
+    between: function(start, end) {
+        var holidays,
+            icals = module.exports.rules.call(this);
+
+        start = moment(start).startOf('day');
+        end = moment(end).endOf('day');
 
         holidays = _.map(icals, function(ical) {
             var rule = RRule.fromString(ical.rule);
 
-            rule.options.dtstart = d.clone().startOf('day').toDate();
+            rule.options.dtstart = start.toDate();
 
-            return _.map(rule.between(d.toDate(), d.clone().endOf('day').toDate(), true), function(val) {
+            return _.map(rule.between(start.toDate(), end.toDate(), true), function(val) {
                 return {
                     name: ical.name,
                     date: val
@@ -24,5 +32,8 @@ module.exports = {
         });
 
         return _.without(_.flatten(holidays), []);
+    },
+    on: function(date) {
+        return module.exports.between.call(this, date, date);
     }
 };

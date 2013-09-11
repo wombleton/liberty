@@ -10,7 +10,17 @@ files = fs.readdirSync('./data');
 module.exports = {};
 
 _.each(files, function(file) {
+    var definitions;
+
     if (re.test(file)) {
-        module.exports[file.replace(re, '')] = require('../data/' + file);
+        definitions = require('../data/' + file);
+
+        _.each(definitions, function(definition) {
+            _.each(definition.regions, function(locale) {
+                module.exports[locale] = module.exports[locale] || [];
+
+                module.exports[locale].push(definition);
+            });
+        });
     }
 });
