@@ -1,4 +1,12 @@
 -
+  name: Good Friday
+  regions: [ca]
+  rule: BYEASTER=-2
+-
+  name: Easter Monday
+  regions: [ca]
+  rule: BYEASTER=1
+-
   name: New Year's Day
   regions: [ca]
   rule: FREQ=YEARLY;BYMONTH=1;BYMONTHDAY=1
