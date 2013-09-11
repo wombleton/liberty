@@ -13,11 +13,16 @@ module.exports = {
         holidays = _.map(icals, function(ical) {
             var rule = RRule.fromString(ical.rule);
 
-            rule.options.dtstart = new Date(0);
+            rule.options.dtstart = d.clone().startOf('day').toDate();
 
-            return rule.between(d.toDate(), d.clone().endOf('day').toDate(), true);
+            return _.map(rule.between(d.toDate(), d.clone().endOf('day').toDate(), true), function(val) {
+                return {
+                    name: ical.name,
+                    date: val
+                };
+            });
         });
 
-        return _.flatten(holidays);
+        return _.without(_.flatten(holidays), []);
     }
 };
