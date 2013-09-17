@@ -1,0 +1,114 @@
+-
+  name: Good Friday
+  regions: [nz]
+  rule: BYEASTER=-2
+-
+  name: Easter Monday
+  regions: [nz]
+  rule: BYEASTER=1
+-
+  name: New Year's Day
+  regions: [nz]
+  rule: 
+  - FREQ=YEARLY;BYMONTH=1;BYMONTHDAY=1;BYDAY=MO,TU,WE,TH,FR
+  - FREQ=YEARLY;BYMONTH=1;BYMONTHDAY=2,3;BYDAY=MO
+-
+  name: Day after New Year's Day
+  regions: [nz]
+  rule: 
+  - FREQ=YEARLY;BYMONTH=1;BYMONTHDAY=2;BYDAY=MO,TU,WE,TH,FR
+  - FREQ=YEARLY;BYMONTH=1;BYMONTHDAY=3;BYDAY=MO
+  - FREQ=YEARLY;BYMONTH=1;BYMONTHDAY=4;BYDAY=TU
+-
+  name: Waitangi Day
+  regions: [nz]
+  rule: FREQ=YEARLY;BYMONTH=2;BYMONTHDAY=6
+-
+  name: Anzac Day
+  regions: [nz]
+  rule: FREQ=YEARLY;BYMONTH=4;BYMONTHDAY=25
+-
+  name: Queen's Birthday
+  regions: [nz]
+  rule: FREQ=YEARLY;BYMONTH=6;BYDAY=1MO
+-
+  name: Labour Day
+  regions: [nz]
+  rule: FREQ=YEARLY;BYMONTH=10;BYDAY=4MO
+-
+  name: Christmas Day
+  regions: [nz]
+  rule:
+  - FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=25;BYDAY=MO,TU,WE,TH,FR
+  - FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=26,27;BYDAY=MO
+-
+  name: Boxing Day
+  regions: [nz]
+  rule: 
+  - FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=26;BYDAY=MO,TU,WE,TH,FR
+  - FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=27;BYDAY=MO
+  - FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=28;BYDAY=TU
+-
+  name: Southland Anniversary Day
+  regions: [nz_sl]
+  rule: BYEASTER=2 
+-
+  name: Wellington Anniversary Day
+  regions: [nz_we]
+  rule: FREQ=YEARLY;BYMONTH=1;BYMONTHDAY=19,20,21,22,23,24,25;BYDAY=MO
+-
+  name: Auckland Anniversary Day
+  regions: [nz_ak]
+  rule: 
+  - FREQ=YEARLY;BYMONTH=1;BYMONTHDAY=26,27,28,29,30,31;BYDAY=MO
+  - FREQ=YEARLY;BYMONTH=2;BYMONTHDAY=1;BYDAY=MO
+-
+  name: Northland Anniversary Day
+  regions: [nz_nl]
+  rule: 
+  - FREQ=YEARLY;BYMONTH=1;BYMONTHDAY=26,27,28,29,30,31;BYDAY=MO
+  - FREQ=YEARLY;BYMONTH=2;BYMONTHDAY=1;BYDAY=MO
+-
+  name: Nelson Anniversary Day
+  regions: [nz_ne]
+  rule:
+  - FREQ=YEARLY;BYMONTH=1;BYMONTHDAY=29,30,31;BYDAY=MO
+  - FREQ=YEARLY;BYMONTH=2;BYMONTHDAY=1,2,3,4;BYDAY=MO
+-
+  name: Otago Anniversary Day
+  regions: [nz_ot]
+  rule: FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=20,21,22,23,24,25,26;BYDAY=MO
+-
+  name: Taranaki Anniversary Day
+  regions: [nz_ta]
+  rule: FREQ=YEARLY;BYMONTH=3;BYDAY=2MO
+-
+  name: Dominion Day
+  regions: [nz_sc]
+  rule: FREQ=YEARLY;BYMONTH=9;BYDAY=4MO
+-
+  name: Hawke's bay Anniversary Day
+  regions: [nz_hb]
+  rule: FREQ=YEARLY;BYMONTH=9;BYDAY=3FR
+-
+  name: Marlborough Anniversary Day
+  regions: [nz_mb]
+  rule:
+  - FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=29,30,31;BYDAY=MO
+  - FREQ=YEARLY;BYMONTH=11;BYMONTHDAY=1,2,3,4;BYDAY=MO
+-
+  name: Canterbury Anniversary Day
+  regions: [nz_ca]
+  rule: FREQ=YEARLY;BYMONTH=11;BYMONTHDAY=11,12,13,14,15,16,17;BYDAY=FR
+-
+  name: Chatham Island Anniversary Day
+  regions: [nz_ch]
+  rule:
+  - FREQ=YEARLY;BYMONTH=11;BYMONTHDAY=28,29,30;BYDAY=MO
+  - FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=1,2,3,4;BYDAY=MO
+-
+  name: Westland Anniversary Day
+  regions: [nz_wl]
+  rule:
+  - FREQ=YEARLY;BYMONTH=11;BYMONTHDAY=28,29,30;BYDAY=MO
+  - FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=1,2,3,4;BYDAY=MO
