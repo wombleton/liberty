@@ -11,6 +11,18 @@ module.exports = {
 
         return _.flatten(cals);
     },
+    forRule: function(rrule, start, end, name) {
+        var rule = RRule.fromString(rrule);
+
+        rule.options.dtstart = start;
+
+        return _.map(rule.between(start, end, true), function(val) {
+            return {
+                name: name,
+                date: val
+            };
+        });
+    },
     between: function(start, end) {
         var holidays,
             icals = module.exports.rules.call(this);
@@ -19,15 +31,8 @@ module.exports = {
         end = moment(end).endOf('day');
 
         holidays = _.map(icals, function(ical) {
-            var rule = RRule.fromString(ical.rule);
-
-            rule.options.dtstart = start.toDate();
-
-            return _.map(rule.between(start.toDate(), end.toDate(), true), function(val) {
-                return {
-                    name: ical.name,
-                    date: val
-                };
+            return _.map(ical.rule, function(rule) {
+                return module.exports.forRule(rule, start.toDate(), end.toDate(), ical.name);
             });
         });
 
