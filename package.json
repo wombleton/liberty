@@ -31,5 +31,5 @@
     "rrule": "~2.0.0",
     "js-yaml": "~2.1.0"
   },
-  "files": ["index.js", "liberty.js", "README.md", "data" "node_modules/rrule"]
+  "files": ["index.js", "liberty.js", "README.md", "data", "node_modules/rrule"]
 }
