@@ -1,6 +1,6 @@
 {
   "name": "liberty",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Calculate statutory and other holidays.",
   "main": "index.js",
   "scripts": {
