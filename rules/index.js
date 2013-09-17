@@ -19,6 +19,10 @@ _.each(files, function(file) {
             _.each(definition.regions, function(locale) {
                 module.exports[locale] = module.exports[locale] || [];
 
+                if (!_.isArray(definition.rule)) {
+                    definition.rule = [definition.rule];
+                }
+
                 module.exports[locale].push(definition);
             });
         });
