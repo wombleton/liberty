@@ -1,6 +1,6 @@
 {
   "name": "liberty",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Calculate statutory and other holidays.",
   "main": "index.js",
   "scripts": {
@@ -31,5 +31,5 @@
     "rrule": "~2.0.0",
     "js-yaml": "~2.1.0"
   },
-  "files": ["data"]
+  "files": ["index.js", "liberty.js", "README.md", "data" "node_modules/rrule"]
 }
