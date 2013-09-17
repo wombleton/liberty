@@ -1,6 +1,10 @@
 liberty
 =======
 
+Adapted from Alex Dunae's `holidays` gem. Calculate the statutory holidays on a given day or in a date range.
+
+Holidays are defined by iCalendar recurrence rules.
+
 Usage
 =====
 
