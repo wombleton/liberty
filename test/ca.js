@@ -1,7 +1,7 @@
 var _ = require('underscore'),
     holidays = new (require('../index'))('ca');
 
-exports['assertions'] = function(test) {
+exports['national holidays'] = function(test) {
     var values = _.zip([
         new Date(2008,0,1),
         new Date(2008,2,21),
@@ -26,7 +26,6 @@ exports['assertions'] = function(test) {
         'Boxing Day'
     ]);
     _.each(values, function(pair) {
-        debugger;
         test.equals(holidays.on(pair[0])[0].name, pair[1]);
     });
 
