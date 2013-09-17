@@ -5,10 +5,13 @@ Adapted from Alex Dunae's `holidays` gem. Calculate the statutory holidays on a 
 
 Holidays are defined by iCalendar recurrence rules.
 
+Currently only Canadian and New Zealand rules are implemented.
+
 Usage
 =====
 
     var Liberty = require('liberty'),
         holidays = new Liberty('ca');
 
-    holidays.on(new Date(2008, 9, 1)); // returns [ { name: 'Labour Day', region: 'ca', date: Date } ]
+    holidays.on(new Date(2008, 8, 1)); // returns [ { name: 'Labour Day', date: Date } ]
+    holidays.between('2008-10-1', '2008-11-30') // returns Thanksgiving & Remembrance Day
