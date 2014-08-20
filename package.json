@@ -1,6 +1,6 @@
 {
   "name": "liberty",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Calculate statutory and other holidays.",
   "main": "index.js",
   "scripts": {
@@ -21,15 +21,23 @@
   "bugs": {
     "url": "https://github.com/wombleton/node-holidays/issues"
   },
-  "bundledDependencies": ["rrule"],
+  "bundledDependencies": [
+    "rrule"
+  ],
   "devDependencies": {
     "nodeunit": "~0.8.1"
   },
   "dependencies": {
     "moment": "~2.1.0",
     "underscore": "~1.5.1",
-    "rrule": "~2.0.0",
+    "rrule": "^2.0.1",
     "js-yaml": "~2.1.0"
   },
-  "files": ["index.js", "liberty.js", "README.md", "data", "rules"]
+  "files": [
+    "index.js",
+    "liberty.js",
+    "README.md",
+    "data",
+    "rules"
+  ]
 }

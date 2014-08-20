@@ -19,7 +19,7 @@ module.exports = {
         return _.map(rule.between(start, end, true), function(val) {
             return {
                 name: name,
-                date: val
+                date: moment(val).startOf('day').toDate()
             };
         });
     },
