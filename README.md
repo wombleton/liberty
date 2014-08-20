@@ -15,3 +15,5 @@ Usage
 
     holidays.on(new Date(2008, 8, 1)); // returns [ { name: 'Labour Day', date: Date } ]
     holidays.between('2008-10-1', '2008-11-30') // returns Thanksgiving & Remembrance Day
+
+Accepts anything `moment` will accept.
