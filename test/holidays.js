@@ -14,9 +14,15 @@ exports['holidays.on finds Labour Day in .ca'] = function(test) {
 
     test.ok(result);
     test.equals(result.length, 1);
-    test.equals(result[0].date.toDateString(), 'Mon Sep 01 2008');
-    test.equals(result[0].date.valueOf(), 1220184000000);
-
+    var date = result[0].date;
+    test.equals(date.toDateString(), 'Mon Sep 01 2008');
+    test.equals(date.getFullYear(), 2008);
+    test.equals(date.getMonth(), 8);
+    test.equals(date.getDay(), 1);
+    test.equals(date.getHours(), 0);
+    test.equals(date.getMinutes(), 0);
+    test.equals(date.getSeconds(), 0);
+    test.equals(date.getMilliseconds(), 0);
     test.done();
 };
 
