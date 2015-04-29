@@ -52,3 +52,11 @@ exports['multiple locales works'] = function(test) {
     test.equals(result.length, 2);
     test.done();
 };
+
+exports['multiple locales work with array'] = function(test) {
+    var holidays = new Holidays(['ca_ab', 'ca_ns']),
+        result = holidays.on(moment('2008-08-04'));
+
+    test.equals(result.length, 2);
+    test.done();
+};
