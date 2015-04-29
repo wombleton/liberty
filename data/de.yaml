@@ -1,0 +1,58 @@
+# German holiday definitions
+#
+# Copied from the Ruby Holiday gem (https://github.com/alexdunae/holidays/blob/master/data/de.yaml) on 2015-04-19.
+#
+# Updated: 2009-11-05.
+# Sources:
+# - http://en.wikipedia.org/wiki/Holidays_in_Germany
+# - http://www.timeanddate.com/calendar/index.html?country=8
+# - http://www.germany.info/relaunch/welcome/travel/holidays.html
+
+- name: Neujahrstag
+  regions: [de]
+  rule: FREQ=YEARLY;BYMONTH=1;BYMONTHDAY=1
+- name: Heilige Drei Könige
+  regions: [de_bw, de_by, de_st]
+  rule: FREQ=YEARLY;BYMONTH=1;BYMONTHDAY=6
+- name: Karfreitag
+  regions: [de]
+  rule: BYEASTER=-2
+- name: Ostermontag
+  regions: [de]
+  rule: BYEASTER=1
+- name: Tag der Arbeit
+  regions: [de]
+  rule: FREQ=YEARLY;BYMONTH=5;BYMONTHDAY=1
+- name: Christi Himmelfahrt
+  regions: [de]
+  rule: BYEASTER=39
+- name: Pfingstmontag
+  regions: [de]
+  rule: BYEASTER=50
+- name: Fronleichnam
+  regions: [de_bw, de_by, de_he, de_nw, de_rp, de_sl]
+  rule: BYEASTER=60
+- name: Mariä Himmelfahrt
+  regions: [de_by, de_sl]
+  rule: FREQ=YEARLY;BYMONTH=8;BYMONTHDAY=15
+- name: Tag der Deutschen Einheit
+  regions: [de]
+  rule: FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=3
+- name: Reformationstag
+  regions: [de_bb, de_mv, de_sn, de_st, de_th]
+  rule: FREQ=YEARLY;BYMONTH=10;BYMONTHDAY=31
+- name: Allerheiligen
+  regions: [de_bw, de_by, de_nw, de_rp, de_sl]
+  rule: FREQ=YEARLY;BYMONTH=11;BYMONTHDAY=1
+# repentance day (Buß- und Bettag) is on the last Wednesday before November 23rd
+# That could be expressed as BYYEARDAY=320,...,326;BDAY=WE but this does not
+# hold in leap years, so we go backwards from 31.12.
+- name: Buß- und Bettag
+  regions: [de_sn]
+  rule: FREQ=YEARLY;BYYEARDAY=-46,-45,-44,-43,-42,-41,-40;BYDAY=WE
+- name: 1. Weihnachtstag
+  regions: [de]
+  rule: FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=25
+- name: 2. Weihnachtstag
+  regions: [de]
+  rule: FREQ=YEARLY;BYMONTH=12;BYMONTHDAY=26
