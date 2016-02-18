@@ -5,8 +5,12 @@ Adapted from Alex Dunae's `holidays` gem. Calculate the statutory holidays on a 
 
 Holidays are defined by iCalendar recurrence rules.
 
-Currently only Canadian and New Zealand rules are implemented.
+Implemented rules:
 
+* Canada
+* New Zealand
+* US
+ 
 Usage
 =====
 
