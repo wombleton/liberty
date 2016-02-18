@@ -57,9 +57,14 @@
 -
   regions: [ca]
   name: Canada Day
-  rule: 
-  - FREQ=YEARLY;BYMONTH=7;BYDAY=MO,TU,WE,TH,FR,SA;BYMONTHDAY=1
+  rule:
+  - FREQ=YEARLY;BYMONTH=7;BYDAY=MO,TU,WE,TH,FR;BYMONTHDAY=1
+-
+  regions: [ca]
+  name: Canada Day(Additional Day)
+  rule:
   - FREQ=YEARLY;BYMONTH=7;BYDAY=MO;BYMONTHDAY=2
+  - FREQ=YEARLY;BYMONTH=7;BYDAY=MO;BYMONTHDAY=3
 -
   regions: [ca_nf]
   name: Orangemen's Day
