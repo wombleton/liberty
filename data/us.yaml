@@ -1,0 +1,65 @@
+-
+  name: New Year's Day
+  regions: [us]
+  rule: FREQ=YEARLY;BYMONTH=1;BYMONTHDAY=1
+-
+  regions: [us]
+  name: Martin Luther King, Jr. Day
+  rule: FREQ=YEARLY;BYMONTH=1;BYDAY=3MO
+-
+  regions: [us]
+  name: President's Day
+  rule: FREQ=YEARLY;BYMONTH=2;BYDAY=3MO
+-
+  regions: [us_ca]
+  name: Cesar Chavez Day
+  rule: FREQ=YEARLY;BYMONTH=3;BYMONTHDAY=31
+-
+  regions: [us]
+  name: Memorial Day
+  rule: FREQ=YEARLY;BYMONTH=5;BYDAY=-1MO
+-
+  regions: [us]
+  name: Independence Day(In lieu)
+  rule:
+  - FREQ=YEARLY;BYMONTH=7;BYDAY=FR;BYMONTHDAY=3
+  - FREQ=YEARLY;BYMONTH=7;BYDAY=MO;BYMONTHDAY=5
+-
+  regions: [us]
+  name: Independence Day
+  rule:
+  - FREQ=YEARLY;BYMONTH=7;BYDAY=MO,TU,WE,TH,FR;BYMONTHDAY=4
+-
+  regions: [us]
+  name: Labour Day
+  rule: FREQ=YEARLY;BYMONTH=9;BYDAY=1MO
+-
+  regions: [us]
+  name: Columbus Day
+  rule: FREQ=YEARLY;BYMONTH=10;BYDAY=2MO
+-
+  regions: [ca]
+  name: Veterans Day(In lieu)
+  rule:
+  - FREQ=YEARLY;BYMONTH=7;BYDAY=FR;BYMONTHDAY=10
+  - FREQ=YEARLY;BYMONTH=7;BYDAY=MO;BYMONTHDAY=12
+-
+  regions: [us]
+  name: Veterans Day
+  rule:
+  - FREQ=YEARLY;BYMONTH=11;BYDAY=MO,TU,WE,TH,FR;BYMONTHDAY=11
+-
+  regions: [us]
+  name: Thanksgiving
+  rule: FREQ=YEARLY;BYMONTH=11;BYDAY=4TH
+-
+  regions: [us]
+  name: Christmas Day(In lieu)
+  rule:
+  - FREQ=YEARLY;BYMONTH=12;BYDAY=MO;BYMONTHDAY=26
+  - FREQ=YEARLY;BYMONTH=12;BYDAY=FR;BYMONTHDAY=24
+-
+  regions: [us]
+  name: Christmas Day
+  rule:
+  - FREQ=YEARLY;BYMONTH=12;BYDAY=MO,TU,WE,TH,FR;BYMONTHDAY=25
